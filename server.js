@@ -15,23 +15,23 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-    res.sendFile('public/about.html');
+    res.sendFile(__dirname +'/public/about.html');
 });
 
 app.get("/contact", (req, res) => {
-    res.sendFile('public/contact.html');
+    res.sendFile(__dirname +'/public/contact.html');
 });
 
 app.get("/blog", (req, res) =>{
-    res.sendFile('public/blog.html');
+    res.sendFile(__dirname +'/public/blog.html');
 });
 
 app.get("/projects", (req, res) => {
-    res.sendFile('public/projects.html');
+    res.sendFile(__dirname +'/public/projects.html');
 });
 
 app.get("services", (req, res) => {
-    res.sendFile('public/services.html');
+    res.sendFile(__dirname +'/public/services.html');
 });
 
 // making listen port
