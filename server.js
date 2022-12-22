@@ -30,7 +30,11 @@ app.get("/projects", (req, res) => {
     res.sendFile(__dirname +'/public/projects.html');
 });
 
-app.get("services", (req, res) => {
+app.get("/services", (req, res) => {
+    res.sendFile(__dirname +'/public/services.html');
+});
+
+app.get("/service-details", (req, res) => {
     res.sendFile(__dirname +'/public/services.html');
 });
 
