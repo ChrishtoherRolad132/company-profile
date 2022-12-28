@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, "public")))
 app.get("/", (req, res) => {
     res.render(index.html);
 });
+console.log("hello world")
 
 app.get("/about", (req, res) => {
     res.sendFile(__dirname +'/public/about.html');
@@ -30,12 +31,16 @@ app.get("/projects", (req, res) => {
     res.sendFile(__dirname +'/public/projects.html');
 });
 
+app.get("/project-details", (req, res) => {
+    res.sendFile(__dirname +'/public/project-details.html');
+});
+
 app.get("/services", (req, res) => {
     res.sendFile(__dirname +'/public/services.html');
 });
 
 app.get("/service-details", (req, res) => {
-    res.sendFile(__dirname +'/public/services.html');
+    res.sendFile(__dirname +'/public/service-details.html');
 });
 
 // making listen port
