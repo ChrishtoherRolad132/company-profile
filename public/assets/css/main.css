@@ -19,8 +19,8 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
+  --color-primary: #03c510;
+  --color-secondary: #763636;
 }
 
 /* Smooth scroll behavior */
@@ -545,7 +545,8 @@ section {
 # Get Started Section
 --------------------------------------------------------------*/
 .get-started .content {
-  padding: 30px 0;
+  padding: 30px 30px;
+  background: #fff;
 }
 
 .get-started .content h3 {
@@ -2580,7 +2581,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/dokumentasi/footer.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
