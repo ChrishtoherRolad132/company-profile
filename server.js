@@ -1,6 +1,8 @@
+require('dotenv').config();
 const path = require("path");
 const express = require("express");
 const { error } = require("console");
+const { domainToASCII } = require("url");
 const app = express();
 
 //make public going rendered
@@ -42,6 +44,7 @@ app.get("/services", (req, res) => {
 app.get("/service-details", (req, res) => {
     res.sendFile(__dirname +'/public/service-details.html');
 });
+
 
 // making listen port
 const port = process.env.PORT || 80
